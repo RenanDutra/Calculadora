@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 
@@ -59,23 +60,24 @@ int main ()
     std::string opcao;  
     float valor1, valor2, escolha;
 
-    cout << "Escolha digitando uma dentre as seguintes operaçães: ";
-    cout << "soma, sub, div, mult, exp, raiz ";
+    cout << "Escolha digitando uma dentre as seguintes operacoes: " << endl;
+    cout << "soma, sub, div, mult, exp, raiz " << endl;
     cin >> opcao;
     if(selecao_operacao(opcao) == -1){
-        cout << "Operação invalida!"; 
+        cout << "Operacao invalida!"; 
         return 0;
     }
     escolha = selecao_operacao(opcao); 
 
   
-    cout << "Agora digite o primeiro valor:";
+    cout << "Agora digite o primeiro valor:" << endl;
     cin >> valor1;
 
-    cout << "Agora digite o segundo valor(o expoente no caso de raiz e exp):";
+    cout << "Agora digite o segundo valor(o expoente no caso de raiz e exp):"<< endl;
     cin >> valor2;
     
-    cout << "O resultado é:" << operacao(valor1, valor2, escolha);
+    cout << "O resultado eh: " << operacao(valor1, valor2, escolha) << endl;
+    system("pause");
 
     return 0;
 }
