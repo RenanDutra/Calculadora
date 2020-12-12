@@ -64,7 +64,8 @@ int main ()
     cout << "soma, sub, div, mult, exp, raiz " << endl;
     cin >> opcao;
     if(selecao_operacao(opcao) == -1){
-        cout << "Operacao invalida!"; 
+        cout << "Operacao invalida!" << endl; 
+        system("pause");
         return 0;
     }
     escolha = selecao_operacao(opcao); 
