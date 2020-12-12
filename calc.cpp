@@ -3,7 +3,7 @@
 using namespace std;
 
 
-/*O código a seguir implemente uma calculadora com as funções de soma, subtração, divisão, multiplicação, raiz e potência*/
+/*O código a seguir implementa uma calculadora com as funções de soma, subtração, divisão, multiplicação, raiz e potência*/
 
 #define ERRO_OPERACAO_INVALIDA -1
 
