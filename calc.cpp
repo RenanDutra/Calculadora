@@ -65,7 +65,7 @@ int main ()
     cin >> opcao;
     if(selecao_operacao(opcao) == -1){
         cout << "Operacao invalida!" << endl; 
-        system("pause");
+        getchar();
         return 0;
     }
     escolha = selecao_operacao(opcao); 
@@ -78,7 +78,7 @@ int main ()
     cin >> valor2;
     
     cout << "O resultado eh: " << operacao(valor1, valor2, escolha) << endl;
-    system("pause");
+    getchar();
 
     return 0;
 }
